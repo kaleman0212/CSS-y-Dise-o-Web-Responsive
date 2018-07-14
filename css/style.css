@@ -1,0 +1,295 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+html {
+	background-color: #000000;
+	padding: 10;
+	margin: 10;
+	font-family: 'Dancing Script', cursive;
+}
+
+
+/* ************************** Logo y Menu*********************************** */
+.div1 {
+  width:100%;  background: #5b7989; height:60%; margin-top: 1px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: center;
+	background: #5b7989;
+	border: 0px;
+	padding: 0;
+}
+
+}
+
+li{	list-style: none;}
+nav  {display: block;width: 100%;overflow: hidden;}
+
+nav ul { /* *** Titulo y Subtitulo*** */
+    margin: 20px 0 20px 0;
+    padding: .7em;
+    float: right;
+    list-style: none;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: .5em;
+    box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 2px 1px rgba(0,0,0,.8) inset;
+}
+
+nav li {float:left;}
+
+nav a {
+    float:left;
+    padding: .8em 1.5em;
+    text-decoration: none;
+    color: black;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff #ccc #999 #eee;
+    background: #c1c1c1;
+    background: linear-gradient(#f5f5f5, #c1c1c1);
+ }
+
+nav a:hover, nav a:focus {
+    outline: 0;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+    background: ##154360;
+    background: linear-gradient(#0e6251, #2980b9);
+}
+
+nav a:active {box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;}
+
+nav li:first-child a {border-left: 0; border-radius: 4px 0 0 4px;}
+
+nav li:last-child a {border-right: 0; border-radius: 0 4px 4px 0;}
+
+/* *********************** Titulo y Subtitulo******************************* */
+.box1{padding: 0;background: #5b7989;}
+
+.h1 {
+		font-size:24px; color:#fcfffe; text-align: center;font-weight:bold;
+	  text-transform:uppercase; text-shadow: 2px 2px 2px #02010a; margin-left: 3%;
+}
+.h2 {
+		font-size:12px; color:#010101; text-align: center;font-weight:bold;
+	  text-transform:uppercase; text-shadow: 2px 2px 2px #fefdfd; margin-left: 3%;
+}
+
+/* ************************** Imagen Central ******************************* */
+.box2 {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: center;
+	background: #5b7989;
+	border: 0px;
+	padding: 0;
+  width:100%; height:70%;
+}
+
+.box2 img {background: #82c3a6;margin-top: 1%;margin-bottom: 1%;padding: 0;}
+
+#imagen{
+	border-width: 2px; border-color: #82c3a6;
+	margin-top: 1%;
+	margin-left: 15%;
+	padding:0;
+	margin-bottom:1%;
+	background: #82c3a6;
+	width:70%; height:70%;
+}
+
+/* ************************** Imagenes *********************************** */
+.box3 {
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+			justify-content: center;
+			background: yellow;
+			border: 1px;
+			float: center;
+			width:100%;
+}
+
+
+.traslation img:hover {margin-top: -5px; margin-right: -20px; background: #82c3a6; border: 2px;}
+
+.traslation img {
+	border: 5px solid #82c3a6;
+	float: left;
+	margin: 1px;
+	-webkit-transition: margin 0.5s ease-out;
+	-moz-transition: margin 0.5s ease-out;
+	-ms-transition: margin 0.5s ease-out;
+	transition: margin 0.5s ease-out;
+	}
+
+.rotacion { /*transiciones 2 segundos*/
+		-moz-transition: all 2s ease;
+		-ms-transition: all 2s ease;
+		-o-transition: all 2s ease;
+		-webkit-transition: all 2s ease;
+		transition: all 2s ease;
+		border-width: : 2px; border-color: black;
+}
+.rotacion:hover {
+		-moz-transform:rotate(10deg);
+		-webkit-transform:rotate(10deg);
+		-o-transform:rotate(10deg);
+		-ms-transform:rotate(10deg);
+		transform:rotate(10deg);
+}
+
+#image2{
+	border-width: : 2px; border-color: black;
+	margin-top: 1%;
+	margin-left: 15%;
+	padding:0;
+	margin-bottom:1%;
+	background: #82c3a6;
+	width:70%; height:70%;
+}
+#image3{
+	border-width: : 2px; border-color: #82c3a6;
+	margin-top: 1%;
+	margin-left: 15%;
+	padding:0;
+	margin-bottom:1%;
+	background: #82c3a6;
+	width:70%; height:70%;
+}
+
+.cop{ font-size: 4;}
+
+	/* ************************** @media *********************************** */
+@media all and (min-width: 900px) {
+	 nav li {float:left;font-size: 12px;}
+	.div1 image{width:100%;	height:100%;}
+	.box2 {width:100%; height:70%;}
+	main {-webkit-column-count:3;-moz-column-count:3;column-count:3; width: 100%;}
+	main img{width: 70%; margin-left: 12%;}
+	body h1{font-size:24px}
+}
+
+@media all and (max-width: 900px) and (min-width:600px){
+.item{font-size: 10px;}
+nav li {float:left;font-size: 10px;}
+.div1 image{width:70%; height:70%; background: #82c3a6; border-width: 0px}
+main {-webkit-column-count:2;-moz-column-count:2;column-count:2; width: 100%;}
+main img{width: 70%; margin-left: 12%;}
+body h1{font-size:22px}
+}
+
+@media all and (max-width: 599px){
+.item{font-size: 10px;}
+nav li {float:left;font-size: 10px;}
+.div1 image{width:70%; height:70%; background: #82c3a6; border-width: 0px}
+main {-webkit-column-count:1;-moz-column-count:1;column-count:1; width: 100%;}
+main img{width: 70%; margin-left: 12%;}
+body h1{font-size:20px}
+
+nav ul {margin: 0px 0 20px 0;padding: .7em;float: center;list-style: none;margin-right: 20%;}
+}
+
+
+/* ************************** Paisajes*********************************** */
+#contenido {
+	display: flex;
+	flex-direction: column;
+	background: green;
+}
+
+#contenido > h1 {
+	padding: 10px;
+	text-align: center;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: row;
+}
+
+img{
+	border: 2px solid white;
+	width: 200px;
+}
+
+.contenedor > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+}
+
+#imagen1{
+	-webkit-filter: blur(10px); /* imagen 1 */
+	filter: blur(10px);
+}
+#imagen2{
+	-webkit-filter: grayscale(100%); /* imagenes 2-4-6 */
+	filter: grayscale(100%);
+}
+
+#imagen3{
+	-webkit-filter: sepia(90%); /* imagen 6 */
+	filter: sepia(90%);
+}
+
+/* ************************** footer *********************************** */
+.box4 {
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+			justify-content: center;
+			background: #C6d5c5;
+			border: 0px;
+			width:100%;
+	}
+
+.item {
+		background-color: #C6d5c5;
+		margin: 2px;
+		padding: 5px;
+		flex-grow: 1;
+		font-size:16px;
+		color:#010101;
+		text-align: center;
+		margin-left: 0.05%;
+	}
+
+	footer {width:100%; height:auto; background: #C6d5c5; margin-top: 0.5%;}
+
+/* ************************** animacion *********************************** */
+	.slide {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+	@keyframes slidein {
+	0%{
+	margin-top: 150%;
+	}
+	60%{
+	margin-top: -5%;
+	}
+	100%{
+	margin-top: 0%;
+	}
+	}
+
+
+
+
+@
